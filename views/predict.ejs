@@ -1,0 +1,35 @@
+
+<table class="container">
+    <thead>
+        <tr>
+            <center><th><h3>S.No</h3></th></center>
+            <th><h3>Crop</h3></th>
+            <th><h3>Total mark (60)</h3></th>
+            <th><h3>PH (10)</h3></th>
+            <th><h3>Nitrogen (10)</h3></th>
+            <th><h3>Phosphorus (10)</h3></th>
+            <th><h3>Pottasium (10)</h3></th>
+            <th><h3>Calcium (10)</h3></th>
+            <th><h3>Magnesium (10)</h3></th>
+        </tr>
+    </thead>
+    
+
+    
+    <tbody>
+        <%j=1%>
+         <%for (var i in predict){%>        
+            <tr>
+                <td> <center>&nbsp; <%=j++%> &nbsp; </center></td> 
+                <td> <center>&nbsp; <%=predict[i].crop_name%> &nbsp; </center></td>
+                <td> <center>&nbsp; <%=predict[i].crop_mark%> &nbsp; </center></td>
+                <td> <center>&nbsp; <%=predict[i].ph_mark%> &nbsp; </center></td>
+                <td> <center>&nbsp; <%=predict[i].n_mark%> &nbsp; </center></td>
+                <td> <center>&nbsp; <%=predict[i].p_mark%> &nbsp; </center></td>
+                <td> <center>&nbsp; <%=predict[i].k_mark%> &nbsp; </center></td>
+                <td> <center>&nbsp; <%=predict[i].ca_mark%> &nbsp; </center></td>
+                <td> <center>&nbsp; <%=predict[i].mg_mark%> &nbsp; </center></td>
+            </tr>
+        <%}%>
+    </tbody>
+</table>
